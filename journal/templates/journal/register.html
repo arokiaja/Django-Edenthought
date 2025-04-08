@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+    
+        <title> Ednethought | Register </title>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+
+
+    </head>
+
+    <div class="container bg-white shadow-md p-5">
+
+        <h3> Create your account </h3>
+
+        <h5> Share your thought today! </h5>
+
+        <br>
+        <br>
+
+        <form method="POST" autocomplte="off">
+
+            {% csrf_token %}
+            {{RegistrationForm.as_p}}
+
+            <button type="submit"> Create account </button>
+
+
+
+    </div>
+
+</html>

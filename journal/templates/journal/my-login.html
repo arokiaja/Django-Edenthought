@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+    
+        <title> Login </title>
+
+    </head>
+
+    <div class="container">
+
+        <h3> Login to your account </h3>
+
+        <br>
+        <br>
+
+        <form method="POST" autocomplte="off">
+
+            {% csrf_token %}
+            {{LoginForm.as_p}}
+
+            <button type="login"> Login </button>
+
+
+
+    </div>
+
+</html>
